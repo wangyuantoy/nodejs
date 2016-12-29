@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    -webkit-user-select: none;
+}
+
+input {
+    display: block;
+    outline: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+span {
+    display: block;
+}
+
+.box {
+    margin: 10px auto;
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #2B93D2;
+    overflow: hidden;
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0 #ccc;
+}
+
+.box h2 {
+    height: 35px;
+    background: #2B93D2;
+    overflow: hidden;
+}
+
+.box h2 span {
+    float: left;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.box .dataList {
+    height: 300px;
+}
+
+.box .dataList li {
+    height: 30px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/*使用CSS3实现奇数行和偶数行变颜色*/
+.box .dataList li:nth-child(even) {
+    background: indianred;
+}
+
+.box .dataList li:hover {
+    background: lightgreen;
+}
+
+.box .dataList li:active {
+    background: #6D84B4;
+}
+
+.box .dataList li span {
+    float: left;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.box .page {
+    margin-top: 10px;
+    float: right;
+    overflow: hidden;
+}
+
+.box .page div, .box .page ul, .box .page input {
+    float: left;
+}
+
+.box .page div {
+    margin-left: 5px;
+    width: 45px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #FF5500;
+}
+
+.box .page ul {
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+.box .page ul li {
+    float: left;
+    margin-left: 5px;
+    width: 20px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #FF5500;
+}
+
+.box .page ul li.bg {
+    background: #2B93D2;
+}
+
+.box .page input {
+    margin-left: 5px;
+    width: 40px;
+    height: 18px;
+    text-align: center;
+    border: 1px solid #FF5500;
+}
