@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #table li{
+            list-style: none;
+            width: 100px;
+            height: 24px;
+            line-height: 24px;
+            border: 1px solid red;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+用户名:<input type="text" name="username">
+<br><br>
+密码:<input type="text" name="psw">
+<br><br>
+<input type="button" onclick="reg()" value="注册">
+
+<ul id="table">
+    <li class="username">afs</li>
+    <li class="psw">adfas</li>
+</ul>
+
+</body>
+<script>
+    function reg() {
+        var username = document.querySelector("input[name='username']").value;
+        var psw = document.querySelector("input[name='psw']").value;
+        var table=document.querySelector("#table");
+        var un=table.querySelector(".username");
+        var pw=table.querySelector(".psw");
+        var user = {
+            username: username,
+            psw:psw
+        };
+        // 创建ajax对象 0
+        var xhr = new XMLHttpRequest();
+        // 指定参数 1
+        xhr.open('post', '/reg', true);
+        //设置相应类型，自动把xhr.responseType转成相应类型
+        //xhr.responseType='json';
+        xhr.onreadystatechange = function () {
+            if (4 == xhr.readyState) {
+                if (200 == xhr.status) {
+                    //var users=xhr.response;
+                    un.innerHTML=JSON.parse(xhr.responseText)[0].username;
+                    pw.innerHTML=JSON.parse(xhr.responseText)[0].psw;
+
+                } else {
+                    document.querySelector("#clock").innerHTML = xhr.statusText;
+                }
+
+            }
+        };
+        // 指定请求体发送数据
+        xhr.send(JSON.stringify(user))
+    }
+
+</script>
+</html>

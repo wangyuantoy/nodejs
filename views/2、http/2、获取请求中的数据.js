@@ -5,7 +5,7 @@ var server = http.createServer(function (req, res) {
     console.log(req.url);   // 请求URL
     console.log(req.headers); //请求头
     //响应码、响应头一定要写在响应体前边
-    res.statusCode = 200; // 设置相应码
+    res.statusCode = 200; // 设置响应码
     res.setHeader("Content-Type", "text/html;charset=utf-8"); //设置响应头
     res.write("hello"); //响应体
 

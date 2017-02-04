@@ -3,6 +3,7 @@ var http = require("http");
 /*创建服务器并返回当前时间*/
 var server = http.createServer(function (req, res) {
     var url = req.url;
+    //通过判断请求的url，确定返回的内容
     if (url == "/index.html") {
         res.setHeader("Content-Type", "text/html;charset=utf-8");
         fs.readFile("./index.html", "utf8", function (err, data) {
@@ -16,7 +17,7 @@ var server = http.createServer(function (req, res) {
             res.end();
         })
     }
-    //指定文件路径
+
 
 });
 

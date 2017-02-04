@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="content"></ul>
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open('get', 'books.json', true);
+    xhr.responseType = 'json';
+    xhr.onreadystatechange = function () {
+        // xhr.status只要是2开头的就是成功
+        if (4 == xhr.readyState && /2\d{2}/.test(xhr.status)) {
+            //获取所有的响应头
+            console.log(xhr.getAllResponseHeaders());
+            //获取指定响应头
+            console.log(xhr.getResponseHeader('Content-Type'));
+            //获取响应体和响应状态码描述
+            //console.log(xhr.responseText,xhr.statusText);
+            //输出响应体，响应体类型由responseType决定
+            console.log(xhr.response);
+            //document.querySelector("#content").innerHTML=xhr.responseText;
+            var books = xhr.response;
+            var h = '';
+            for (var i = 0; i < books.length; i++) {
+                for (var j in books[i]) {
+                    h += '<li>' + j + ':' + books[i][j] + '</li>';
+                }
+            }
+            document.querySelector("#content").innerHTML=h;
+        }
+    };
+    xhr.send();
+
+</script>
+</body>
+</html>
