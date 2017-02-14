@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="myForm" name="userform" method="post" enctype="multipart/form-data">
+    <p>用户名<input type="text" name="username"></p>
+    <p>密码<input type="text" name="password"></p>
+    <p>头像 <input type="file" name="avatar" multiple></p>
+    <input type="button" id="regBtn">注册</input>
+</form>
+<div class="imgBox">
+
+</div>
+<script>
+    window.onload = function () {
+        document.querySelector("#regBtn").addEventListener('click', function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('post', '/reg2', true);
+            //xhr.responseType = 'json';
+            xhr.onreadystatechange = function () {
+                // xhr.status只要是2开头的就是成功
+                if (4 == xhr.readyState && /2\d{2}/.test(xhr.status)) {
+                    var data = xhr.responseText;
+                    var oImg = document.createElement("img");
+                    oImg.src = data;
+                    document.getElementsByClassName("imgBox")[0].appendChild(oImg);
+                }
+            };
+            var formData = new FormData();
+            formData.append("username", document.querySelector('input[name=username]').value);
+            formData.append("password", document.querySelector('input[name=password]').value);
+            var avatar = document.querySelector('input[name=avatar]');
+            formData.append("avatar", avatar.files[0]);
+            xhr.send(formData);
+        })
+    }
+</script>
+</body>
+</html>

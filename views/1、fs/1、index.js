@@ -89,7 +89,7 @@ function copy(src, target) {
         }
     })
 }
-copy("./files.html", "./copyFile.txt");
+copy("./files.html", "./copyFile.index");
 
 
 

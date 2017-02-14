@@ -6,7 +6,7 @@ http.createServer(function (req, res) {
     var urlObj=url.parse(req.url,true);
     var pathname=urlObj.pathname;
     if(pathname=='/'){
-        fs.readFile('./index.html','utf8',function (err,data) {
+        fs.readFile('./index.txt.txt.html','utf8',function (err,data) {
             res.end(data);
         })
     }else if(pathname=='/reg'){

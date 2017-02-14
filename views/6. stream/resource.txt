@@ -1,0 +1,157 @@
+/*
+* 可读流
+* 第一个参数是读取文件路径
+* 第二个参数option对象
+* { flags: 'r', 是否替换
+ encoding: null,  编码规则
+ start:   读取的起始位置
+ end：    读取的结束位置
+ fd: null,
+ mode: 0666,
+ autoClose: true   读取完成是否自动关闭
+ highWaterMark 最高水位线，停止从底层资源读取前内部缓存区最多能存放的字节数，默认64kb
+ }*//*
+    * 可读流
+    * 第一个参数是读取文件路径
+    * 第二个参数option对象
+    * { flags: 'r', 是否替换
+     encoding: null,  编码规则
+     start:   读取的起始位置
+     end：    读取的结束位置
+     fd: null,
+     mode: 0666,
+     autoClose: true   读取完成是否自动关闭
+     highWaterMark 最高水位线，停止从底层资源读取前内部缓存区最多能存放的字节数，默认64kb
+     }*//*
+        * 可读流
+        * 第一个参数是读取文件路径
+        * 第二个参数option对象
+        * { flags: 'r', 是否替换
+         encoding: null,  编码规则
+         start:   读取的起始位置
+         end：    读取的结束位置
+         fd: null,
+         mode: 0666,
+         autoClose: true   读取完成是否自动关闭
+         highWaterMark 最高水位线，停止从底层资源读取前内部缓存区最多能存放的字节数，默认64kb
+         }*//*
+            * 可读流
+            * 第一个参数是读取文件路径
+            * 第二个参数option对象
+            * { flags: 'r', 是否替换
+             encoding: null,  编码规则
+             start:   读取的起始位置
+             end：    读取的结束位置
+             fd: null,
+             mode: 0666,
+             autoClose: true   读取完成是否自动关闭
+             highWaterMark 最高水位线，停止从底层资源读取前内部缓存区最多能存放的字节数，默认64kb
+             }*//*
+                * 可读流
+                * 第一个参数是读取文件路径
+                * 第二个参数option对象
+                * { flags: 'r', 是否替换
+                 encoding: null,  编码规则
+                 start:   读取的起始位置
+                 end：    读取的结束位置
+                 fd: null,
+                 mode: 0666,
+                 autoClose: true   读取完成是否自动关闭
+                 highWaterMark 最高水位线，停止从底层资源读取前内部缓存区最多能存放的字节数，默认64kb
+                 }*//*
+                    * 可读流
+                    * 第一个参数是读取文件路径
+                    * 第二个参数option对象
+                    * { flags: 'r', 是否替换
+                     encoding: null,  编码规则
+                     start:   读取的起始位置
+                     end：    读取的结束位置
+                     fd: null,
+                     mode: 0666,
+                     autoClose: true   读取完成是否自动关闭
+                     highWaterMark 最高水位线，停止从底层资源读取前内部缓存区最多能存放的字节数，默认64kb
+                     }*//*
+                        * 可读流
+                        * 第一个参数是读取文件路径
+                        * 第二个参数option对象
+                        * { flags: 'r', 是否替换
+                         encoding: null,  编码规则
+                         start:   读取的起始位置
+                         end：    读取的结束位置
+                         fd: null,
+                         mode: 0666,
+                         autoClose: true   读取完成是否自动关闭
+                         highWaterMark 最高水位线，停止从底层资源读取前内部缓存区最多能存放的字节数，默认64kb
+                         }*//*
+                            * 可读流
+                            * 第一个参数是读取文件路径
+                            * 第二个参数option对象
+                            * { flags: 'r', 是否替换
+                             encoding: null,  编码规则
+                             start:   读取的起始位置
+                             end：    读取的结束位置
+                             fd: null,
+                             mode: 0666,
+                             autoClose: true   读取完成是否自动关闭
+                             highWaterMark 最高水位线，停止从底层资源读取前内部缓存区最多能存放的字节数，默认64kb
+                             }*//*
+                                * 可读流
+                                * 第一个参数是读取文件路径
+                                * 第二个参数option对象
+                                * { flags: 'r', 是否替换
+                                 encoding: null,  编码规则
+                                 start:   读取的起始位置
+                                 end：    读取的结束位置
+                                 fd: null,
+                                 mode: 0666,
+                                 autoClose: true   读取完成是否自动关闭
+                                 highWaterMark 最高水位线，停止从底层资源读取前内部缓存区最多能存放的字节数，默认64kb
+                                 }*//*
+                                    * 可读流
+                                    * 第一个参数是读取文件路径
+                                    * 第二个参数option对象
+                                    * { flags: 'r', 是否替换
+                                     encoding: null,  编码规则
+                                     start:   读取的起始位置
+                                     end：    读取的结束位置
+                                     fd: null,
+                                     mode: 0666,
+                                     autoClose: true   读取完成是否自动关闭
+                                     highWaterMark 最高水位线，停止从底层资源读取前内部缓存区最多能存放的字节数，默认64kb
+                                     }*//*
+                                        * 可读流
+                                        * 第一个参数是读取文件路径
+                                        * 第二个参数option对象
+                                        * { flags: 'r', 是否替换
+                                         encoding: null,  编码规则
+                                         start:   读取的起始位置
+                                         end：    读取的结束位置
+                                         fd: null,
+                                         mode: 0666,
+                                         autoClose: true   读取完成是否自动关闭
+                                         highWaterMark 最高水位线，停止从底层资源读取前内部缓存区最多能存放的字节数，默认64kb
+                                         }*//*
+                                            * 可读流
+                                            * 第一个参数是读取文件路径
+                                            * 第二个参数option对象
+                                            * { flags: 'r', 是否替换
+                                             encoding: null,  编码规则
+                                             start:   读取的起始位置
+                                             end：    读取的结束位置
+                                             fd: null,
+                                             mode: 0666,
+                                             autoClose: true   读取完成是否自动关闭
+                                             highWaterMark 最高水位线，停止从底层资源读取前内部缓存区最多能存放的字节数，默认64kb
+                                             }*//*
+                                                * 可读流
+                                                * 第一个参数是读取文件路径
+                                                * 第二个参数option对象
+                                                * { flags: 'r', 是否替换
+                                                 encoding: null,  编码规则
+                                                 start:   读取的起始位置
+                                                 end：    读取的结束位置
+                                                 fd: null,
+                                                 mode: 0666,
+                                                 autoClose: true   读取完成是否自动关闭
+                                                 highWaterMark 最高水位线，停止从底层资源读取前内部缓存区最多能存放的字节数，默认64kb
+                                                 }*/

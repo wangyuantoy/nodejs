@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="content">
+
+</ul>
+<script>
+    //jsonp只能是get请求，不能是post
+    function show(data) {
+        console.log(data)
+    }
+    var script = document.createElement('script');
+    script.src = "http://localhost:8080/books.html?callback=show"; //返回show(['html','css'])
+    document.body.appendChild(script)
+</script>
+</body>
+</html>

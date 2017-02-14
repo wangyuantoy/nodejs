@@ -4,9 +4,9 @@ var http = require("http");
 var server = http.createServer(function (req, res) {
     var url = req.url;
     //通过判断请求的url，确定返回的内容
-    if (url == "/index.html") {
+    if (url == "/index.txt.txt.html") {
         res.setHeader("Content-Type", "text/html;charset=utf-8");
-        fs.readFile("./index.html", "utf8", function (err, data) {
+        fs.readFile("./index.txt.txt.html", "utf8", function (err, data) {
             res.write(data);
             res.end();
         })
