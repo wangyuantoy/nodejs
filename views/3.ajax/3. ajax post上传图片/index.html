@@ -29,11 +29,12 @@
                     document.getElementsByClassName("imgBox")[0].appendChild(oImg);
                 }
             };
-            var formData = new FormData();
-            formData.append("username", document.querySelector('input[name=username]').value);
-            formData.append("password", document.querySelector('input[name=password]').value);
-            var avatar = document.querySelector('input[name=avatar]');
-            formData.append("avatar", avatar.files[0]);
+            var myForm=document.querySelector("#myForm");
+            var formData = new FormData(myForm);
+//            formData.append("username", document.querySelector('input[name=username]').value);
+//            formData.append("password", document.querySelector('input[name=password]').value);
+//            var avatar = document.querySelector('input[name=avatar]');
+//            formData.append("avatar", avatar.files[0]);
             xhr.send(formData);
         })
     }
