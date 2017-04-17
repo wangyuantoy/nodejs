@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2deba17-3707-4c26-b6fe-a868d274a149" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="nodejs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,6 +111,7 @@
         <option value="$PROJECT_DIR$/views/3.ajax/4. jsonp/index.html" />
         <option value="$PROJECT_DIR$/views/3.ajax/4. jsonp/server.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -332,12 +333,12 @@
       <workItem from="1491960216970" duration="1240000" />
       <workItem from="1492148594780" duration="5658000" />
       <workItem from="1492391785384" duration="601000" />
-      <workItem from="1492406129856" duration="1641000" />
+      <workItem from="1492406129856" duration="2807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129219000" />
+    <option name="totallyTimeSpent" value="130385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -377,13 +378,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/8. express/2. 中间件.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/8. express/8. post请求.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -727,6 +721,17 @@
         <state relative-caret-position="180">
           <caret line="6" column="75" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="75" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
