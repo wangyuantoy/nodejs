@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-success">
+                <div class="panel panel-heading">欢迎来到聊天室</div>
+                <div class="panel-body">
+                    <ul class="list-group" id="messageUl">
+                        <li class="list-group-item">
+xiaoxi
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="txtMsg">
+                        </div>
+                        <div class="col-xs-2">
+                            <button class="btn btn-default" type="button" id="sendBtn">发言</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+ <!--固定src链接，文件在nodemodule中-->
+<script src="/socket.io/socket.io.js"></script>
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+    window.onload = function () {
+        // io由引入的script写入
+        var socket = io.connect('/');
+        socket.on('connect',function () {
+            document.querySelector("#messageUl").appendChild()
+        });
+        socket.on('message',function (msg) {
+            console.log(msg)
+        })
+    }
+</script>
+</html>
