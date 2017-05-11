@@ -9,11 +9,16 @@ app.get('/',function (req,res) {
 var server = require('http').createServer(app);
 // 创建socket.io服务器
 var io = require('socket.io')(server);
-
+var clients = [];
 io.on('connection',function (socket) {
+    // 把所有人的socket存放到clients
+    clients.push(socket);
     //socket 代表与某个客户端的链接对象
     socket.on('message',function (msg) {
-        socket.send('server:' + msg)
+        // 客户端发过来的消息发给所有人
+        clients.forEach(function (client) {
+            client.send(msg)
+        })
     })
 });
 

@@ -13,9 +13,7 @@
                 <div class="panel panel-heading">欢迎来到聊天室</div>
                 <div class="panel-body">
                     <ul class="list-group" id="messageUl">
-                        <li class="list-group-item">
-xiaoxi
-                        </li>
+
                     </ul>
                 </div>
                 <div class="panel-footer">
@@ -42,10 +40,17 @@ xiaoxi
         // io由引入的script写入
         var socket = io.connect('/');
         socket.on('connect',function () {
-            document.querySelector("#messageUl").appendChild()
+            $("#messageUl").append('<li class="list-group-item">服务器连接成功</li>')
         });
+        // 接收服务器返回的消息  并显示
         socket.on('message',function (msg) {
-            console.log(msg)
+            $("#messageUl").append('<li class="list-group-item">'+ msg +'</li>')
+        });
+
+        $('#sendBtn').click(function () {
+            var message = $('#txtMsg').val();
+            socket.send(message);
+            $('#txtMsg').val('');
         })
     }
 </script>
